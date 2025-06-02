@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AR Vendor</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #000;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px 0;
+  }
+  nav a {
+    color: #eee;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  nav a:hover {
+    color: #ff4500;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  .product-card {
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.7);
+  }
+  .product-card img {
+    width: 100%;
+    display: block;
+  }
+  .product-info {
+    padding: 15px;
+  }
+  .product-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 0 10px 0;
+  }
+  .price {
+    color: #ff4500;
+    font-weight: bold;
+  }
+  .price del {
+    color: #888;
+    margin-left: 10px;
+    font-weight: normal;
+  }
+  .sale-badge {
+    position: absolute;
+    background: #ff4500;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+  }
+  .product-card-wrapper {
+    position: relative;
+  }
+</style>
+</head>
+<body>
+<header>AR Vendor</header>
+<nav>
+  <a href="#">Products</a>
+  <a href="#">Sale</a>
+</nav>
+<main class="products">
+  <div class="product-card-wrapper">
+    <div class="sale-badge">Sale</div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0684/7741/6869/products/ALL_APEL_SUPPLIERS_300x.jpg?v=1675747536" alt="ALL APEL SUPPLIERS" />
+      <div class="product-info">
+        <div class="product-title">ALL APEL SUPPLIERS</div>
+        <div class="price">$15.00 <del>$20.00</del></div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card-wrapper">
+    <div class="sale-badge">Sale</div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0684/7741/6869/products/ALL_BALENCI_300x.jpg?v=1675747576" alt="ALL BALENCI" />
+      <div class="product-info">
+        <div class="product-title">ALL BALENCI</div>
+        <div class="price">$15.00 <del>$25.00</del></div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card-wrapper">
+    <div class="sale-badge">Sale</div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0684/7741/6869/products/ALL_CLOTHING_300x.jpg?v=1675747543" alt="ALL CLOTHING" />
+      <div class="product-info">
+        <div class="product-title">ALL CLOTHING</div>
+        <div class="price">$15.00 <del>$25.00</del></div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card-wrapper">
+    <div class="sale-badge">Sale</div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0684/7741/6869/products/ALL_L_V_300x.jpg?v=1675747541" alt="ALL L V" />
+      <div class="product-info">
+        <div class="product-title">ALL L V</div>
+        <div class="price">$15.00 <del>$20.00</del></div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card-wrapper">
+    <div class="sale-badge">Sale</div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0684/7741/6869/products/ALL_SHOES_300x.jpg?v=1675747539" alt="ALL SHOES" />
+      <div class="product-info">
+        <div class="product-title">ALL SHOES</div>
+        <div class="price">$10.00 <del>$20.00</del></div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
